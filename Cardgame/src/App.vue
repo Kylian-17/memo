@@ -26,7 +26,7 @@ const flipCard = (card) => {
 
 <template>
   <header>
-    
+
     <img src="/assets/logo.svg" alt="Logo du jeu"/>
   </header>
   <main>
@@ -54,6 +54,25 @@ const flipCard = (card) => {
 </template>
 
 <style>
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 10;
+  background: transparent; /* ou une couleur si tu veux */
+}
+
+main {
+  margin-top: 60px; /* hauteur du header fixe */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 
 
 header img{
@@ -78,8 +97,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* aligne en haut */
-  min-height: 100vh;
   padding-top: 60px; /* espace au dessus */
+  margin-top: 0;
 }
 
 .display-container {
